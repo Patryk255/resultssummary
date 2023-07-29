@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#card {
+  -webkit-box-shadow: 11px 8px 19px 2px rgb(235, 245, 255);
+  -moz-box-shadow: 11px 8px 19px 2px rgb(235, 245, 255);
+  box-shadow: 11px 8px 19px 2px rgb(235, 245, 255);
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+#card .inCardContent {
+  display: flex;
+  justify-content: center;
+}
+#card .inCardContent .leftSideContent {
+  width: 100%;
+  height: 360px;
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  padding: 20px;
+  flex: 1;
+  border-radius: 20px;
+  position: relative;
+}
+#card .inCardContent .leftSideContent h4 {
+  color: hsl(241, 100%, 89%);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+}
+#card .inCardContent .leftSideContent .resultCircle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  margin-bottom: 20px;
+  position: relative;
+}
+#card .inCardContent .leftSideContent .resultCircle .bigText {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+}
+#card .inCardContent .leftSideContent .resultCircle .smallText {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hsl(221, 100%, 96%);
+  font-size: 12px;
+  opacity: 0.6;
+}
+#card .inCardContent .leftSideContent h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 300;
+}
+#card .inCardContent .leftSideContent p {
+  color: hsl(241, 100%, 89%);
+  font-size: 14px;
+  font-weight: 300;
+  width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.2;
+}
+#card .inCardContent .rightSideContent {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  padding-right: 0px;
+  flex: 1.1;
+}
+#card .inCardContent .rightSideContent h3 {
+  font-weight: 300;
+  margin-top: 5px;
+}
+#card .inCardContent .rightSideContent .dataList {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponentGeneral {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 16px;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent1 {
+  background-color: hsla(0, 100%, 67%, 0.2);
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent1 .title {
+  color: hsl(0, 100%, 67%);
+  margin-right: auto;
+  margin-left: 10px;
+  display: flex;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent1 .rest {
+  opacity: 0.3;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent1 img {
+  margin-right: 5px;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent2 {
+  background-color: hsla(39, 100%, 56%, 0.2);
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent2 .title {
+  color: hsl(0, 100%, 67%);
+  margin-right: auto;
+  margin-left: 10px;
+  display: flex;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent2 .rest {
+  opacity: 0.3;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent2 img {
+  margin-right: 5px;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent3 {
+  background-color: hsla(166, 100%, 37%, 0.2);
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent3 .title {
+  color: hsl(166, 100%, 37%);
+  margin-right: auto;
+  margin-left: 10px;
+  display: flex;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent3 .rest {
+  opacity: 0.3;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent3 img {
+  margin-right: 5px;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent4 {
+  background-color: hsla(234, 85%, 45%, 0.2);
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent4 img {
+  margin-right: 5px;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent4 .title {
+  color: hsl(0, 100%, 67%);
+  margin-right: auto;
+  margin-left: 10px;
+  display: flex;
+}
+#card .inCardContent .rightSideContent .dataList .dataComponent4 .rest {
+  opacity: 0.3;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+#card .inCardContent .rightSideContent button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 30px;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-weight: 600;
+}
+#card .inCardContent .rightSideContent button:hover {
+  color: white;
+  background-color: hsl(234, 85%, 45%);
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  #card {
+    width: 100vw;
+    height: 150vh;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+  }
+  #card .inCardContent {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #card .inCardContent .leftSideContent {
+    width: 100vw;
+    height: 100%;
+    flex: auto;
+    margin-top: 125px;
+    border-radius: 10px 10px 0px 0px;
+    flex: 0.6;
+  }
+  #card .inCardContent .leftSideContent p {
+    margin-bottom: 0px;
+  }
+  #card .inCardContent .rightSideContent {
+    flex: 0.3;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
