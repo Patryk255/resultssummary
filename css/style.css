@@ -93,6 +93,7 @@ body {
 #card .inCardContent .rightSideContent h3 {
   font-weight: 300;
   margin-top: 5px;
+  margin-left: 15px;
 }
 #card .inCardContent .rightSideContent .dataList {
   width: 90%;
