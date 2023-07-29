@@ -198,9 +198,9 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 500px) {
   #card {
-    width: 100vw;
+    width: 90vw;
     height: 150vh;
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
