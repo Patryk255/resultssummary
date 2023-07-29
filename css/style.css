@@ -88,7 +88,6 @@ body {
   width: 100%;
   height: 100%;
   padding: 30px;
-  padding-right: 0px;
   flex: 1.1;
 }
 #card .inCardContent .rightSideContent h3 {
@@ -100,6 +99,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   gap: 20px;
 }
 #card .inCardContent .rightSideContent .dataList .dataComponentGeneral {
@@ -181,6 +182,8 @@ body {
 }
 #card .inCardContent .rightSideContent button {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
   align-items: center;
   width: 90%;
@@ -200,11 +203,11 @@ body {
 
 @media (max-width: 500px) {
   #card {
-    width: 100%;
+    width: 90%;
     height: 100%;
     overflow: hidden;
-    border-radius: 0px 0px 10px 10px;
-    padding: 30px;
+    border-radius: 0px 0px 0px 0px;
+    padding: 20px;
   }
   #card .inCardContent {
     flex-direction: column;
@@ -214,10 +217,9 @@ body {
     align-items: center;
   }
   #card .inCardContent .leftSideContent {
-    width: 100vw;
+    width: 100%;
     height: 100%;
-    flex: auto;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0px 0px 10px 10px;
     flex: 1;
   }
   #card .inCardContent .leftSideContent p {
@@ -225,6 +227,7 @@ body {
   }
   #card .inCardContent .rightSideContent {
     flex: 2;
+    padding: 20px;
   }
 }
 
