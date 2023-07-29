@@ -113,7 +113,7 @@ body {
   font-size: 16px;
 }
 #card .inCardContent .rightSideContent .dataList .dataComponent1 {
-  background-color: hsla(0, 100%, 67%, 0.2);
+  background-color: hsla(0, 100%, 67%, 0.03);
 }
 #card .inCardContent .rightSideContent .dataList .dataComponent1 .title {
   color: hsl(0, 100%, 67%);
@@ -130,7 +130,7 @@ body {
   margin-right: 5px;
 }
 #card .inCardContent .rightSideContent .dataList .dataComponent2 {
-  background-color: hsla(39, 100%, 56%, 0.2);
+  background-color: hsla(39, 100%, 56%, 0.03);
 }
 #card .inCardContent .rightSideContent .dataList .dataComponent2 .title {
   color: hsl(0, 100%, 67%);
@@ -147,7 +147,7 @@ body {
   margin-right: 5px;
 }
 #card .inCardContent .rightSideContent .dataList .dataComponent3 {
-  background-color: hsla(166, 100%, 37%, 0.2);
+  background-color: hsla(166, 100%, 37%, 0.03);
 }
 #card .inCardContent .rightSideContent .dataList .dataComponent3 .title {
   color: hsl(166, 100%, 37%);
@@ -164,7 +164,7 @@ body {
   margin-right: 5px;
 }
 #card .inCardContent .rightSideContent .dataList .dataComponent4 {
-  background-color: hsla(234, 85%, 45%, 0.2);
+  background-color: hsla(234, 85%, 45%, 0.03);
 }
 #card .inCardContent .rightSideContent .dataList .dataComponent4 img {
   margin-right: 5px;

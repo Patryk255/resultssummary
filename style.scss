@@ -1,11 +1,11 @@
 $lightRed: hsl(0, 100%, 67%);
-$lightRedOp: hsl(0, 100%, 67%, 0.2);
+$lightRedOp: hsl(0, 100%, 67%, 0.03);
 $orangeYellow: hsl(39, 100%, 56%);
-$orangeYellowOp: hsl(39, 100%, 56%, 0.2);
+$orangeYellowOp: hsl(39, 100%, 56%, 0.03);
 $greenTeal: hsl(166, 100%, 37%);
-$greenTealOp:hsl(166, 100%, 37%,0.2);
+$greenTealOp: hsl(166, 100%, 37%, 0.03);
 $cobaltBlue: hsl(234, 85%, 45%);
-$cobaltBlueOp: hsl(234, 85%, 45%,0.2);
+$cobaltBlueOp: hsl(234, 85%, 45%, 0.03);
 
 $lightStateBlue: hsl(252, 100%, 67%);
 $lightRoyalBlue: hsl(241, 81%, 54%);
@@ -17,262 +17,256 @@ $paleBlue: hsl(221, 100%, 96%);
 $lightLavender: hsl(241, 100%, 89%);
 $darkGrayBlue: hsl(224, 30%, 27%);
 
-$font: 'Hanken Grotesk', sans-serif;
+$font: "Hanken Grotesk", sans-serif;
 $paragraphFont: 18px;
 
-body{
-    margin:0;
-    padding: 0;
-    font-family: $font;
-    font-size: $paragraphFont;
-    height: 100vh;
-    width:100%;
-    position: relative;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  font-size: $paragraphFont;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
 }
 
-#card{
-    -webkit-box-shadow: 11px 8px 19px 2px rgba(235, 245, 255, 1);
-    -moz-box-shadow: 11px 8px 19px 2px rgba(235, 245, 255, 1);
-    box-shadow: 11px 8px 19px 2px rgba(235, 245, 255, 1);
-    border-radius: 20px;
-    width: 600px;
-    height: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
+#card {
+  -webkit-box-shadow: 11px 8px 19px 2px rgba(235, 245, 255, 1);
+  -moz-box-shadow: 11px 8px 19px 2px rgba(235, 245, 255, 1);
+  box-shadow: 11px 8px 19px 2px rgba(235, 245, 255, 1);
+  border-radius: 20px;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 
-    .inCardContent{
+  .inCardContent {
+    display: flex;
+    justify-content: center;
+
+    .leftSideContent {
+      width: 100%;
+      height: 360px;
+      background: linear-gradient(to top, $lightRoyalBlue, $lightStateBlue);
+      padding: 20px;
+      flex: 1;
+      border-radius: 20px;
+      position: relative;
+
+      h4 {
+        color: $lightLavender;
+        font-weight: 300;
         display: flex;
         justify-content: center;
+      }
 
-        .leftSideContent{
-            width: 100%;
-            height:360px;
-            background: linear-gradient(to top, $lightRoyalBlue, $lightStateBlue);
-            padding: 20px;
-            flex: 1;
-            border-radius: 20px;
-            position: relative;
+      .resultCircle {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background: linear-gradient(to bottom, $violetBlueC, $persianBlueC);
+        margin-bottom: 20px;
+        position: relative;
 
-            h4{
-                color:$lightLavender;
-                font-weight: 300;
-                display: flex;
-                justify-content: center;
-            }
-
-            .resultCircle{
-                width: 130px;
-                height: 130px;
-                border-radius: 50%;
-                margin: 0 auto;
-                background: linear-gradient(to bottom, $violetBlueC, $persianBlueC);
-                margin-bottom: 20px;
-                position: relative;
-
-                .bigText{
-                    position: absolute;
-                    top:40%;
-                    left:50%;
-                    transform: translate(-50%, -50%);
-                    color: white;
-                    font-size: 48px;
-                    font-weight: 700;
-                }
-
-                .smallText{
-                    position: absolute;
-                    top:70%;
-                    left:50%;
-                    transform: translate(-50%, -50%);
-                    color:$paleBlue;
-                    font-size: 12px;
-                    opacity: 0.6;
-                }
-            }
-            h2{
-                display: flex;
-                justify-content: center;
-                color: white;
-                font-weight: 300;
-            }
-            p{
-                color:$lightLavender;
-                font-size: 14px;
-                font-weight: 300;
-                width: 75%;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-                line-height: 1.2;
-            }
+        .bigText {
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          font-size: 48px;
+          font-weight: 700;
         }
-        .rightSideContent{
-            width: 100%;
-            height: 100%;
-            padding: 30px;
-            // padding-right: 0px;
-            flex: 1.1;
-            h3{
-                font-weight: 300;
-                margin-top: 5px;
-            }
-            .dataList{
-                width: 90%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-left: auto;
-                margin-right: auto;
-                
-                gap: 20px;
-                
 
-                .dataComponentGeneral{
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    width:100%;
-                    height: 40px;
-                    
-                    border-radius: 10px 10px 10px 10px;
-                    font-size: 16px;
-
-                    
-                }
-                .dataComponent1{
-                    background-color: $lightRedOp;
-                    
-                    .title{
-                        color: $lightRed;
-                        margin-right: auto;
-                        margin-left: 10px;
-                        
-                        display: flex;
-                    }
-                    .rest{
-                        opacity: 0.3;
-                        margin-left: 5px;
-                        margin-right: 10px;
-                    }
-                    img{
-                        margin-right: 5px;
-                    }
-                }
-
-                .dataComponent2{
-                    background-color: $orangeYellowOp;
-                    .title{
-                        color: $lightRed;
-                    margin-right: auto;
-                    margin-left:10px;
-                        display: flex;
-                    }
-                    .rest{
-                        opacity: 0.3;
-                        margin-left: 5px;
-                        margin-right: 10px;
-                    }
-                    img{
-                        margin-right: 5px;
-                    }
-                }
-
-                .dataComponent3{
-                    background-color: $greenTealOp;
-                    .title{
-                        color: $greenTeal;
-                        margin-right: auto;
-                    margin-left:10px;
-                        display: flex;
-                    }
-                    .rest{
-                        opacity: 0.3;
-                        margin-left: 5px;
-                        margin-right: 10px;
-                    }
-                    img{
-                        margin-right: 5px;
-                    }
-                }
-
-                .dataComponent4{
-                    background-color: $cobaltBlueOp;
-                    img{
-                        margin-right: 5px;
-                    }
-                    .title{
-                        color: $lightRed;
-                        margin-right: auto;
-                    margin-left:10px;
-                        display: flex;
-                    }
-                    .rest{
-                        opacity: 0.3;
-                        margin-left: 5px;
-                        margin-right: 10px;
-                    }
-                }
-                
-            }
-            button{
-                display: flex;
-                margin-left: auto;
-                margin-right: auto;
-                justify-content: center;
-                align-items: center;
-                width: 90%;
-                margin-top: 20px;
-                border: none;
-                height: 40px;
-                border-radius: 20px;
-                background-color: $darkGrayBlue;
-                color: white;
-                font-weight: 600;
-            }
-            button:hover{
-                color:white;
-                background-color: $cobaltBlue;
-                cursor: pointer;
-            }
+        .smallText {
+          position: absolute;
+          top: 70%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $paleBlue;
+          font-size: 12px;
+          opacity: 0.6;
         }
+      }
+      h2 {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: 300;
+      }
+      p {
+        color: $lightLavender;
+        font-size: 14px;
+        font-weight: 300;
+        width: 75%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.2;
+      }
     }
+    .rightSideContent {
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+      // padding-right: 0px;
+      flex: 1.1;
+      h3 {
+        font-weight: 300;
+        margin-top: 5px;
+      }
+      .dataList {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        gap: 20px;
+
+        .dataComponentGeneral {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          height: 40px;
+
+          border-radius: 10px 10px 10px 10px;
+          font-size: 16px;
+        }
+        .dataComponent1 {
+          background-color: $lightRedOp;
+
+          .title {
+            color: $lightRed;
+            margin-right: auto;
+            margin-left: 10px;
+
+            display: flex;
+          }
+          .rest {
+            opacity: 0.3;
+            margin-left: 5px;
+            margin-right: 10px;
+          }
+          img {
+            margin-right: 5px;
+          }
+        }
+
+        .dataComponent2 {
+          background-color: $orangeYellowOp;
+          .title {
+            color: $lightRed;
+            margin-right: auto;
+            margin-left: 10px;
+            display: flex;
+          }
+          .rest {
+            opacity: 0.3;
+            margin-left: 5px;
+            margin-right: 10px;
+          }
+          img {
+            margin-right: 5px;
+          }
+        }
+
+        .dataComponent3 {
+          background-color: $greenTealOp;
+          .title {
+            color: $greenTeal;
+            margin-right: auto;
+            margin-left: 10px;
+            display: flex;
+          }
+          .rest {
+            opacity: 0.3;
+            margin-left: 5px;
+            margin-right: 10px;
+          }
+          img {
+            margin-right: 5px;
+          }
+        }
+
+        .dataComponent4 {
+          background-color: $cobaltBlueOp;
+          img {
+            margin-right: 5px;
+          }
+          .title {
+            color: $lightRed;
+            margin-right: auto;
+            margin-left: 10px;
+            display: flex;
+          }
+          .rest {
+            opacity: 0.3;
+            margin-left: 5px;
+            margin-right: 10px;
+          }
+        }
+      }
+      button {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-top: 20px;
+        border: none;
+        height: 40px;
+        border-radius: 20px;
+        background-color: $darkGrayBlue;
+        color: white;
+        font-weight: 600;
+      }
+      button:hover {
+        color: white;
+        background-color: $cobaltBlue;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 @media (max-width: 500px) {
-    #card{
-        width: 90%;
-        height: 100%;
-        overflow:hidden;
-        border-radius: 0px 0px 0px 0px;
-        padding: 20px;
-        
-    .inCardContent{
-        
-        flex-direction: column;
+  #card {
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0px 0px 0px 0px;
+    padding: 20px;
+
+    .inCardContent {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .leftSideContent {
         width: 100%;
         height: 100%;
-        justify-content: center;
-        align-items: center;
-        
-        .leftSideContent{
-            width: 100%;
-            height: 100%;
-            
-            border-radius: 0px 0px 10px 10px;
-            flex: 1;
-            p{
-                margin-bottom: 0px;
-            }
 
+        border-radius: 0px 0px 10px 10px;
+        flex: 1;
+        p {
+          margin-bottom: 0px;
         }
-        .rightSideContent{
-            flex: 2;
-            padding: 20px;
-        }
+      }
+      .rightSideContent {
+        flex: 2;
+        padding: 20px;
+      }
     }
-}
+  }
 }
